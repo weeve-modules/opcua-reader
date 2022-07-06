@@ -1,0 +1,74 @@
+version: 1.0.0
+name: OPCUAReader
+description: Module for listening and reading incoming data from OPC UA Server
+icon: https://icons-020-demo.s3.eu-central-1.amazonaws.com/mi_OPCUA_input.png
+type: input
+tags:
+  - OPC UA Reader
+  - process
+categories:
+  - id: category
+    name: Process
+image:
+  name: weevenetwork/opcua
+  tag: latest
+environments:
+  - key:  OPC_UA_SERVER
+    description: URL of OPC UA Server
+    value: ''
+    default: ''
+    type: string
+    name: OPC UA Server
+  - key:  REQUIRES_AUTHENTICATION
+    description: OPC UA Server requires authentication
+    value: ''
+    default: no
+    type: enum
+    options:
+      - yes
+      - no
+  - key:  OPC_UA_USERNAME
+    description: Username for authentication
+    value: ''
+    default: ''
+    type: string
+    name: OPC UA Username
+  - key:  OPC_UA_PASSWORD
+    description: Password for authentication
+    value: ''
+    default: ''
+    type: string
+    name: OPC UA Password
+  - key:  INITIAL_DELAY
+    description: Initial delay
+    value: ''
+    default: 1000
+    type: integer
+    name: Initial delay
+  - key:  MAX_RETRY
+    description: Max retry for connecting
+    value: ''
+    default: 1
+    type: integer
+    name: Max retry
+  - key:  NODE_ID
+    description: Node ID to connect to
+    value: ''
+    default: ''
+    type: string
+    name: Node ID
+  - key:  VARIABLE_LIST
+    description: Comma separated list of variables to read
+    value: ''
+    default: ''
+    type: string
+    name: Variable list
+commands: []
+document:
+  ports: []
+  volumes: []
+  restart_policy:
+    condition: on-failure
+    delay: 10s
+    max_attempts: 3
+    window: 120s
