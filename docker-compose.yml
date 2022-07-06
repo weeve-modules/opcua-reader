@@ -11,7 +11,6 @@ services:
       INGRESS_PORT: 80      
       EGRESS_URL: http://localhost:8082
       OPC_UA_SERVER: opc.tcp://localhost:26543
-      INITIAL_DELAY: 1000
       MAX_RETRY: 1      
       NODE_ID: 3
       VARIABLE_LIST: Scalar_Simulation_Float

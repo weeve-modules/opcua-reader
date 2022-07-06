@@ -39,12 +39,6 @@ environments:
     default: ''
     type: string
     name: OPC UA Password
-  - key:  INITIAL_DELAY
-    description: Initial delay
-    value: ''
-    default: 1000
-    type: integer
-    name: Initial delay
   - key:  MAX_RETRY
     description: Max retry for connecting
     value: ''

@@ -24,7 +24,6 @@ OPC UA Reader reads values for variables and forwards the payload to next module
 | Environment Variables | type | Description |
 | --- | --- | --- |
 | OPC_UA_SERVER | string | OPC UA Server endpoint |
-| INITIAL_DELAY | integer | Initial delay for connection |
 | MAX_RETRY | integer | Max retry for connection |
 | NODE_ID | string | Node ID to connect to |
 | VARIABLE_LIST | string | Comma separated list of variables to read |

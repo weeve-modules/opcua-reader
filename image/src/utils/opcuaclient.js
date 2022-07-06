@@ -2,7 +2,6 @@ const { OPCUAClient, MessageSecurityMode, SecurityPolicy, UserTokenType } = requ
 
 const fetch = require('node-fetch')
 const {
-  INITIAL_DELAY,
   MAX_RETRY,
   NODE_ID,
   VARIABLE_LIST,
@@ -17,7 +16,6 @@ const {
 const { isValidURL } = require('./util')
 
 const connectionStrategy = {
-  initialDelay: INITIAL_DELAY,
   maxRetry: MAX_RETRY,
 }
 
