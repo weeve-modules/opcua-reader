@@ -41,7 +41,7 @@ OPC UA Reader reads values for variables and forwards the payload to next module
 | INGRESS_HOST          | string | Host where app is running |
 | INGRESS_PORT          | string | Port where app is running |
 
-##Ouput send to next module looks like this
+## Output sent to next module looks like this
 
 ```js
   {
