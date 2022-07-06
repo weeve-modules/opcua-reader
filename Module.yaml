@@ -1,6 +1,6 @@
 version: 1.0.0
 name: OPCUAReader
-description: Module for listening and reading incoming data from OPC UA Server
+description: OPC UA Reader reads values for variables and forwards the payload to next module.
 icon: https://icons-020-demo.s3.eu-central-1.amazonaws.com/mi_OPCUA_input.png
 type: input
 tags:
