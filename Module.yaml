@@ -33,12 +33,18 @@ environments:
     default: ''
     type: string
     name: OPC UA Username
+    dependencies:
+      - key: REQUIRES_AUTHENTICATION
+        value: yes
   - key:  OPC_UA_PASSWORD
     description: Password for authentication
     value: ''
     default: ''
     type: string
     name: OPC UA Password
+    dependencies:
+      - key: REQUIRES_AUTHENTICATION
+        value: yes
   - key:  MAX_RETRY
     description: Max retry for connecting
     value: ''
