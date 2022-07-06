@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     environment:
       MODULE_NAME: opcua-reader
-      MODULE_TYPE: INGRESS
+      MODULE_TYPE: PROCESS
       INGRESS_HOST: 127.0.0.1
       INGRESS_PORT: 80      
       EGRESS_URL: http://localhost:8082
