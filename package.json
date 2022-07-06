@@ -1,0 +1,40 @@
+{
+  "name": "OPCUAReader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "image/src/app.js",
+  "scripts": {
+    "start": "node image/src/app.js",
+    "develop:env": "nodemon --require dotenv/config image/src/app.js",
+    "develop": "nodemon image/src/app.js",
+    "lint-fix": "eslint --ext js --fix ./image/src",
+    "lint": "eslint --ext js ./image/src",
+    "format": "prettier --write \"**/*.{js,json,md}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weeve-modules/opcua-reader"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://tnextbigthing.atlassian.net/browse/WMD-48"
+  },
+  "homepage": "https://github.com/weeve-modules/opcua-reader",
+  "devDependencies": {
+    "dotenv": "^9.0.2",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-prettier": "^3.4.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.0"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-winston": "^4.2.0",
+    "node-fetch": "^2.6.1",
+    "node-opcua": "^2.71.0"
+  }
+}
