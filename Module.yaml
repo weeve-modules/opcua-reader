@@ -10,7 +10,7 @@ categories:
   - id: category
     name: Process
 image:
-  name: weevenetwork/opcua
+  name: weevenetwork/opcua-reader
   tag: latest
 environments:
   - key:  OPC_UA_SERVER
