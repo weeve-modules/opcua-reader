@@ -14,6 +14,5 @@ services:
       MAX_RETRY: 1      
       NODE_ID: 3
       VARIABLE_LIST: Scalar_Simulation_Float
-      REQUIRES_AUTHENTICATION: no
       OPC_UA_USERNAME: ''
       OPC_UA_PASSWORD: ''

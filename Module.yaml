@@ -1,5 +1,5 @@
 version: 1.0.0
-name: OPCUAReader
+name: OPC UA Reader
 description: OPC UA Reader reads values for variables and forwards the payload to next module.
 icon: https://icons-020-demo.s3.eu-central-1.amazonaws.com/mi_OPCUA_input.png
 type: process
@@ -8,7 +8,7 @@ tags:
   - process
 categories:
   - id: category
-    name: Process
+    name: Policy
 image:
   name: weevenetwork/opcua-reader
   tag: latest
@@ -19,32 +19,18 @@ environments:
     default: ''
     type: string
     name: OPC UA Server
-  - key:  REQUIRES_AUTHENTICATION
-    description: OPC UA Server requires authentication
-    value: ''
-    default: no
-    type: enum
-    options:
-      - yes
-      - no
   - key:  OPC_UA_USERNAME
     description: Username for authentication
     value: ''
     default: ''
     type: string
     name: OPC UA Username
-    dependencies:
-      - key: REQUIRES_AUTHENTICATION
-        value: yes
   - key:  OPC_UA_PASSWORD
     description: Password for authentication
     value: ''
     default: ''
     type: string
     name: OPC UA Password
-    dependencies:
-      - key: REQUIRES_AUTHENTICATION
-        value: yes
   - key:  MAX_RETRY
     description: Max retry for connecting
     value: ''

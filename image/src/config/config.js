@@ -11,5 +11,4 @@ module.exports = {
   VARIABLE_LIST: env('VARIABLE_LIST', 'Scalar_Simulation_Float'),
   OPC_UA_PASSWORD: env('OPC_UA_PASSWORD', ''),
   OPC_UA_USERNAME: env('OPC_UA_USERNAME', ''),
-  REQUIRES_AUTHENTICATION: env('REQUIRES_AUTHENTICATION', 'no'),
 }
