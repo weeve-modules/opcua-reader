@@ -1,4 +1,4 @@
-# OPCUAReader
+# OPC UA Reader
 
 |                |                                                                                 |
 | -------------- | ------------------------------------------------------------------------------- |
@@ -7,7 +7,7 @@
 | Dockerhub Link | [weevenetwork/opcua-reader](https://hub.docker.com/r/weevenetwork/opcua-reader) |
 | Authors        | Mesud Pasic                                                                     |
 
-- [OPCUAReader](#OPCUAReader)
+- [OPC UA Reader](#OPCUAReader)
   - [Description](#description)
   - [Features](#features)
   - [Environment Variables](#environment-variables)
