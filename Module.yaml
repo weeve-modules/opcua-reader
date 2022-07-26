@@ -8,7 +8,7 @@ categories:                             # Array of category that will be used to
 type: 'Input'      # Module type (Input, Processing, Output) that will be used to group the module in the UI.
 image:
   name: 'weevenetwork/opcua-reader'     # Image name from the docker registry.
-  tag: 'latest'                               # Image tag from the docker registry.
+  tag: 'v1.0.0'                               # Image tag from the docker registry.
   homepage: 'https://hub.docker.com/weevenetwork/opcua-reader'      # Image homepage from the docker registry.
 repository: 'https://github.com/weeve-modules/opcua-reader'     # Repository URL to source code.
 envs:                                   # Array of environment variables that will be used to configure the module. Also used to show related fields on the UI.
