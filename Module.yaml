@@ -4,7 +4,7 @@ description: 'OPC UA Reader reads values for variables and forwards the payload 
 versionName: 'v1.0.0'                    # Module version name that will be used to reference the module version, and uniquely identify the module version with a common name.
 isPublic: true                          # Boolean value that indicates if the module is Public or Private.
 categories:                             # Array of category that will be used to group the module in the UI.
-  - 'OPC UA'
+  - 'Ingress'
 type: 'Input'      # Module type (Input, Processing, Output) that will be used to group the module in the UI.
 image:
   name: 'weevenetwork/opcua-reader'     # Image name from the docker registry.
@@ -15,28 +15,28 @@ envs:                                   # Array of environment variables that wi
   - name: OPC UA Server
     key:  OPC_UA_SERVER
     description: URL of OPC UA Server
-    value: ''    
-    type: 'text'    
+    value: ''
+    type: 'text'
   - name: OPC UA Username
     key:  OPC_UA_USERNAME
     description: Username for authentication
-    value: ''    
-    type: 'text'    
+    value: ''
+    type: 'text'
   - name: OPC UA Password
     key:  OPC_UA_PASSWORD
     description: Password for authentication
-    value: ''    
-    type: 'text'    
+    value: ''
+    type: 'text'
   - name: Max retry
     key:  MAX_RETRY
     description: Max retry for connecting
     value: '1'
-    type: integer    
+    type: 'number'
   - name: Node ID
     key:  NODE_ID
     description: Node ID to connect to
-    value: ''    
-    type: 'text'    
+    value: ''
+    type: 'text'
   - name: Variable list
     key:  VARIABLE_LIST
     description: Comma separated list of variables to read
