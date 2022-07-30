@@ -4,7 +4,7 @@
 | -------------- | ------------------------------------------------------------------------------- |
 | Name           | OPC UA Reader                                                                   |
 | Version        | v1.0.0                                                                          |
-| Dockerhub Link | [weevenetwork/opcua-reader](https://hub.docker.com/r/weevenetwork/opcua-reader) |
+| DockerHub | [weevenetwork/opcua-reader](https://hub.docker.com/r/weevenetwork/opcua-reader) |
 | Authors        | Mesud Pasic                                                                     |
 
 - [OPC UA Reader](#OPCUAReader)
@@ -39,6 +39,7 @@ OPC UA Reader reads values for variables and forwards the payload to next module
 | MODULE_NAME           | string | Name of the module        |
 | INGRESS_HOST          | string | Host where app is running |
 | INGRESS_PORT          | string | Port where app is running |
+| EGRESS_URLS           | string | HTTP ReST endpoint for the next module            |
 
 ## Output sent to next module looks like this
 

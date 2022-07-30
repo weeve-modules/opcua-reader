@@ -17,31 +17,43 @@ envs:                                   # Array of environment variables that wi
     description: URL of OPC UA Server
     value: ''
     type: 'text'
+    options: []
+    dependencies: []
   - name: OPC UA Username
     key:  OPC_UA_USERNAME
     description: Username for authentication
     value: ''
     type: 'text'
+    options: []
+    dependencies: []
   - name: OPC UA Password
     key:  OPC_UA_PASSWORD
     description: Password for authentication
     value: ''
     type: 'text'
+    options: []
+    dependencies: []
   - name: Max retry
     key:  MAX_RETRY
     description: Max retry for connecting
     value: '1'
     type: 'number'
+    options: []
+    dependencies: []
   - name: Node ID
     key:  NODE_ID
     description: Node ID to connect to
     value: ''
     type: 'text'
+    options: []
+    dependencies: []
   - name: Variable list
     key:  VARIABLE_LIST
     description: Comma separated list of variables to read
     value: ''
     type: 'text'
+    options: []
+    dependencies: []
 ports:                                  # Array of ports that will be exposed by the module.
   - container: 8080                     # Port number from the container.
     host: 8080                          # Port number to map on the host.
