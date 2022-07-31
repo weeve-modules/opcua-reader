@@ -1,11 +1,11 @@
 # OPC UA Reader
 
-|                |                                                                                 |
-| -------------- | ------------------------------------------------------------------------------- |
-| Name           | OPC UA Reader                                                                   |
-| Version        | v1.0.0                                                                          |
+|           |                                                                                 |
+| --------- | ------------------------------------------------------------------------------- |
+| Name      | OPC UA Reader                                                                   |
+| Version   | v1.0.0                                                                          |
 | DockerHub | [weevenetwork/opcua-reader](https://hub.docker.com/r/weevenetwork/opcua-reader) |
-| Authors        | Mesud Pasic                                                                     |
+| Authors   | Mesud Pasic                                                                     |
 
 - [OPC UA Reader](#OPCUAReader)
   - [Description](#description)
@@ -34,12 +34,12 @@ OPC UA Reader reads values for variables and forwards the payload to next module
 
 ### Set by the weeve Agent on the edge-node
 
-| Environment Variables | type   | Description               |
-| --------------------- | ------ | ------------------------- |
-| MODULE_NAME           | string | Name of the module        |
-| INGRESS_HOST          | string | Host where app is running |
-| INGRESS_PORT          | string | Port where app is running |
-| EGRESS_URLS           | string | HTTP ReST endpoint for the next module            |
+| Environment Variables | type   | Description                            |
+| --------------------- | ------ | -------------------------------------- |
+| MODULE_NAME           | string | Name of the module                     |
+| INGRESS_HOST          | string | Host where app is running              |
+| INGRESS_PORT          | string | Port where app is running              |
+| EGRESS_URLS           | string | HTTP ReST endpoint for the next module |
 
 ## Output sent to next module looks like this
 
