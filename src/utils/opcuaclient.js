@@ -55,22 +55,32 @@ const processRead = async () => {
 }
 const send = async (name, value) => {
   if (EGRESS_URLS) {
-    await fetch(EGRESS_URLS, {
-      method: 'POST',
-      body: JSON.stringify({
-        timestamp: Date.now(),
-        value,
-        name,
-      }),
+    const eUrls = EGRESS_URLS.replace(/ /g, '')
+    const urls = eUrls.split(',')
+    urls.forEach(async url => {
+      if (url) {
+        try {
+          const callRes = await fetch(url, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              timestamp: Date.now(),
+              value,
+              name,
+            }),
+          })
+          if (!callRes.ok) {
+            console.error(`Error passing response data to ${url}, status: ${callRes.status}`)
+          }
+        } catch (e) {
+          console.error(`Error making request to: ${url}, error: ${e.message}`)
+        }
+      }
     })
   } else {
-    console.log(
-      JSON.stringify({
-        timestamp: Date.now(),
-        value,
-        name,
-      })
-    )
+    console.error('EGRESS_URLS is not provided.')
   }
 }
 
